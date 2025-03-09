@@ -6,10 +6,11 @@
     <title>Home Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="preconnect"> 
     <meta name="description" content="This page contains a home page where html, css, and javascript use is shown">
     <meta name="author" content="Kevin Ogutu - WDD231, BYU-Idaho">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="images/harvey.webp">
     <script src="scripts/home.js" defer></script>
 </head>
 <body>
@@ -17,7 +18,7 @@
         <button class="hum">☰</button>
         <button class="close hidden">✖</button>
         <figure class="page-heading">
-            <img src="images/harvey.jpg"  loading="lazy" alt="My-image">
+            <img src="images/harvey.webp" width="500" height="664" alt="My-image">
             <span>Kevin Ogutu</span>
         </figure>
         <nav>
@@ -33,7 +34,7 @@
         <h1 class="h1">Home</h1>
         <section class="main-container">
             <section class="course-work">
-                <h3>Course Work</h3>
+                <h2>Course Work</h2>
                 <ul>
                     <li></li>
                     <li></li>
@@ -41,12 +42,12 @@
                 </ul>
             </section>
             <section class="section">
-                <h3>Mombasa, Kenya</h3>
+                <h2>Mombasa, Kenya</h2>
                 <div class="image">
-                    <img src="images/mombasa.jpg"  loading="lazy" alt="Mombasa-city">
+                    <img src="images/mombasa.webp" width="200" height="auto" alt="Mombasa-city">
                 </div>
             </section>
-            <h3 class="web-description">Web and Computer Programming Courses</h3>
+            <h2 class="web-description">Web and Computer Programming Courses</h2>
         </section>
         <div class="buttons">
             <button class="all">All</button>
@@ -54,6 +55,7 @@
             <button class="wdd">WDD</button>
         </div>
         <div class="course-list"></div>
+        <p class="credit"></p>
 
 
     </main>

@@ -77,18 +77,22 @@ const courses = [
         completed: false
     }
 ]
+window.addEventListener("pagehide", () => {
+    if (socket) {
+        socket.close();
+    }
+});
 const courseName = document.querySelector('.course-list');
 const allCourses = document.querySelector('.all');
 const cseCourses = document.querySelector('.cse');
 const wddCourses = document.querySelector('.wdd');
+const totalCredits = document.querySelector('.credit');
 
 allCourses.addEventListener('click', ()=>{
     courseName.innerHTML = '';
-    
     courses.forEach(course=>{
         const div = document.createElement('div');
         div.classList.add('course-item')
-        
         const courseDetails = document.createElement('button');
         courseDetails.classList.add('course-details');
        
@@ -105,6 +109,9 @@ allCourses.addEventListener('click', ()=>{
         div.appendChild(courseDetails);
         courseName.appendChild(div);   
     })
+    const total = courses
+   .reduce((acc, course) => acc + course.credits, 0);
+    totalCredits.textContent = `Total Credits: ${total}`;
 })
 cseCourses.addEventListener('click', ()=>{
     courseName.innerHTML = '';
@@ -121,16 +128,17 @@ cseCourses.addEventListener('click', ()=>{
             }else{
                 button.style.backgroundColor = 'white';
                 button.style.color = 'black';
-
             }
             div.appendChild(button);
-            courseName.appendChild(div);
-            
+            courseName.appendChild(div);  
         })
+    const total = courses
+    .filter(course => course.subject === 'CSE') 
+    .reduce((acc, course) => acc + course.credits, 0);
+     totalCredits.textContent = `Total Credits: ${total}`;      
 })
 wddCourses.addEventListener('click', ()=>{
     courseName.innerHTML = '';
-
     courses
         .filter(wdd=>wdd.subject==='WDD')
         .forEach(wdd=>{
@@ -147,11 +155,14 @@ wddCourses.addEventListener('click', ()=>{
                 wddCourseList.style.color = 'black';
             }
             wddDiv.appendChild(wddCourseList);
-            courseName.appendChild(wddDiv)
-
-
+            courseName.appendChild(wddDiv);
         })
-        
+        const total = courses
+        .filter(course => course.subject === 'WDD')
+        .reduce((acc, course) => acc + course.credits, 0);
+        totalCredits.textContent = `Total Credits: ${total}`;
+    
+       
 })
 const openButton = document.querySelector('.hum');
 const closeButton = document.querySelector('.close');
