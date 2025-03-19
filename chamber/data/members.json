@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Coastal Traders Ltd",
+      "address": "coastal@gmail.com",
+      "phone": "+254 712 345678",
+      "website": "https://coastaltraders.co.ke",
+      "image": "images/traders.jpeg",
+      "membership_level": 3,
+      "description": "Leading supplier of marine and coastal goods."
+    },
+    {
+      "name": "Tech Innovations Africa",
+      "address": "techi@gmail.com",
+      "phone": "+254 722 456789",
+      "website": "https://techinnovations.africa",
+      "image": "images/tech.jpg",
+      "membership_level": 2,
+      "description": "Providing cutting-edge software solutions for businesses."
+    },
+    {
+      "name": "Mombasa Freight Services",
+      "address": "mfreight@gmail.com",
+      "phone": "+254 733 567890",
+      "website": "https://mombasafreight.com",
+      "image": "images/freight.jpeg",
+      "membership_level": 3,
+      "description": "Reliable logistics and freight forwarding services."
+    },
+    {
+      "name": "Safari Adventures",
+      "address": "safaria@gmail.com",
+      "phone": "+254 711 678901",
+      "website": "https://safariadventures.co.ke",
+      "image": "images/image.jpeg",
+      "membership_level": 2,
+      "description": "Offering the best safari tours in Kenya."
+    },
+    {
+      "name": "Mombasa Organic Farms",
+      "address": "organic@gmail.com",
+      "phone": "+254 700 789012",
+      "website": "https://mombasaorganicfarms.com",
+      "image": "images/organic.jpeg",
+      "membership_level": 1,
+      "description": "Sustainable and organic farming solutions."
+    },
+    {
+      "name": "Ocean Blue Resorts",
+      "address": "oceanb@gmail.com",
+      "phone": "+254 720 890123",
+      "website": "https://oceanblueresorts.com",
+      "image": "images/blue.jpeg",
+      "membership_level": 3,
+      "description": "Luxury beachfront resorts and accommodations."
+    },
+    {
+      "name": "Jambo Motors Ltd",
+      "address": "jambom@gmail.com",
+      "phone": "+254 731 901234",
+      "website": "https://jambomotors.co.ke",
+      "image": "images/motors.jpeg",
+      "membership_level": 1,
+      "description": "Quality vehicle sales and servicing."
+    }
+  ]
+  

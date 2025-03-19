@@ -1,0 +1,38 @@
+@media(min-width:600px){
+    #toggleMenuList{
+        display: none;
+    }
+    nav ul, nav ul.open{
+       display: flex;
+       justify-content: flex-end;
+       gap: 20px;
+       padding: 10px;
+
+    }
+    nav, nav.open{
+        grid-template-rows: 1fr;
+        justify-content: flex-end;
+        background-color: #1a3b39;
+    }
+    
+    .listContainer{
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: #d9d9d9;
+    }
+    .logos{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
